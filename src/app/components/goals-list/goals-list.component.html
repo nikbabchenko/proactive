@@ -1,0 +1,11 @@
+<div class="goals">
+  <div class="container">
+    <h3>Наши цели</h3>
+    <div class="goals-list">
+      <div class="list-item" *ngFor="let item of goals">
+        <pr-icon [class]="item.icon"></pr-icon>
+        <div class="content">{{ item.text }}</div>
+      </div>
+    </div>
+  </div>
+</div>

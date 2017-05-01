@@ -1,0 +1,15 @@
+<pr-image-header
+    small="true"
+    title="Документы"
+    image="/assets/images/docs.jpg">
+</pr-image-header>
+<div class="documents-info">
+    <div class="image-holder">
+        <img src="/assets/images/svidoctvo.jpg" alt="Свидетельство о регистрации Общественной организации 'Ассоциация инициативных инвалидов'" (click)="openModal('/assets/images/svidoctvo.jpg', 'Свидетельство о регистрации Общественной организации /Ассоциация инициативных инвалидов')" class="popup">
+    </div>
+
+    <div id="modal-w" class="modal" [class.active]="isOpenModal" (click)="closeModal()">
+        <button class="close" (click)="closeModal()">&times;</button>
+        <img class="modal-content" alt="" src="" #modalImg>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<article class="charity__item"  [style.background-image]="image ? 'url(' + image  + ')' : 'url(/assets/images/1.jpg)'">
+    <div class="charity__item-content">
+        <div class="charity__item-text">
+            <span [innerHTML]="text | safeHtml"></span>
+        </div>
+    </div>
+    <a [routerLink]="link" class="link"></a>
+</article>

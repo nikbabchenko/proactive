@@ -1,0 +1,48 @@
+@import '../../styles/app';
+
+:host {
+    #{'/deep/'} {
+        pr-icon {
+            display: flex;
+        }
+
+        svg {
+            width: 6.5rem;
+            height: 6.5rem;
+            margin: auto;
+        }
+    }
+}
+
+.goals {
+    padding: 4rem $n-padding;
+
+    h3 {
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.goals-list {
+    margin: 0 -$n-padding;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.list-item {
+    width: 30%;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.content {
+    display: inline-block;
+    padding-top: 2rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 18rem;
+}

@@ -1,0 +1,17 @@
+@import '../../styles/app';
+
+.accent-block {
+    background: $lighter-gray;
+    padding: 2rem 0;
+
+    .accent-block__content {
+        max-width: $l-width;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}

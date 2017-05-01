@@ -1,0 +1,10 @@
+@import '../../styles/app';
+
+footer {
+    align-items: center;
+    background: $black;
+    color: $white;
+    display: flex;
+    min-height: 5rem;
+    padding: 0 $n-padding;
+}

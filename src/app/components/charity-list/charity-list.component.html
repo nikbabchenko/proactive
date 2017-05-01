@@ -1,0 +1,8 @@
+<div class="charity__list">
+    <pr-charity-item
+        *ngFor="let item of items; index as i"
+        [image]="item?.image"
+        [text]="item?.text"
+        [link]="item?.link"
+        [class]="i > 1 ? 'third' : ''"></pr-charity-item>
+</div>

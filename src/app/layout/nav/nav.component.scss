@@ -1,0 +1,94 @@
+@import '../../styles/app';
+
+.main-nav {
+    ul {
+        display: flex;
+
+        li {
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+                color: $m-color;
+                display: block;
+                font-size: .9rem;
+                font-weight: 700;
+                padding: 2rem 1.5rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: background .3s linear;
+
+                &:hover {
+                    background-color: rgba(#ccc, .4);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+:host {
+    #{'/deep/'} {
+        .nav-toggle {
+            svg {
+                width: 2.4rem;
+                height: 2.4rem;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.nav-toggle {
+    display: none;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        padding-right: 2rem;
+    }
+
+
+}
+
+.mobile-nav {
+    background: $white;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    top: $header-height;
+    box-shadow: -1px 2px 2px 0px rgba($black, .3);
+    border-top: 1px solid rgba($black, .3);
+    transform: translateX(100%);
+    transition: transform .2s ease-in-out;
+
+    &.active {
+        transform: translateX(0);
+    }
+
+    ul {
+        li {
+            a {
+                border-bottom: 1px solid $black;
+                color: $m-color;
+                display: block;
+                font-size: 1.2rem;
+                padding: 1rem 1.5rem;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover {
+                    background: $lighter-gray;
+                }
+            }
+        }
+    }
+}

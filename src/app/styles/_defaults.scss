@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: $m-font;
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: $m-font;
+    font-size: 14px;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+    color: $m-color;
+
+
+    @media screen and (max-width: 800px) {
+        font-size: 10px;
+    }
+
+    @media screen and (min-width: 801px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 13px;
+    }
+
+    @media screen and (min-width: 1400px) {
+        font-size: 14px;
+    }
+}
+
+html, body {
+    height: 100%;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.main-content {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: .8rem 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

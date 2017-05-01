@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "pr",
       "styles": [
+        "../node_modules/reset.css/reset.css",
         "styles.scss"
       ],
       "scripts": [],

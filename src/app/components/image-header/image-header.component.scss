@@ -1,0 +1,70 @@
+@import '../../styles/app';
+
+.image-header {
+    background-color: $l-gray;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 250px);
+    min-height: 350px;
+
+    &.small {
+        height: 300px;
+        min-height: 1px;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba($black, .3);
+            z-index: -1;
+        }
+
+        .image-header__content {
+            h2 {
+                span {
+                    background: $black;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__content {
+        width: 80%;
+        max-width: 60rem;
+        padding-left: 12%;
+
+        h2 {
+            font-size: 3rem;
+
+            span {
+                background: $white;
+                display: inline-block;
+                font-weight: 700;
+                padding: .6rem 1rem .2rem;
+                text-transform: uppercase;
+            }
+        }
+
+        .image-header__desc {
+            padding-top: 2rem;
+            font-size: 2rem;
+
+            span {
+                background: $black;
+                display: inline-block;
+                color: $white;
+                padding: 1rem 1rem .8rem;
+            }
+        }
+    }
+}

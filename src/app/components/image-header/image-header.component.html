@@ -1,0 +1,10 @@
+<div class="image-header" [style.background-image]="image ? 'url(' + image  + ')' : 'url(/assets/images/3.jpg)'" [class.small]="small">
+    <div class="image-header__content">
+        <h2 class="image-header__title">
+          <span>{{ title ? title : 'Не будь равнодушным!' }}</span>
+        </h2>
+        <div class="image-header__desc" *ngIf="desc">
+            <span>{{ desc ? desc : 'Граждане имеют равные конституционные права и свободы и равны перед законом.' }}</span>
+        </div>
+    </div>
+</div>

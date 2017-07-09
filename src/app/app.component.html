@@ -1,5 +1,6 @@
 <pr-header></pr-header>
 <div class="main-content" role="main">
-    <router-outlet></router-outlet>
+    <router-outlet (deactivate)="onDeactivate()"></router-outlet>
 </div>
 <pr-footer></pr-footer>
+<pr-modal></pr-modal>

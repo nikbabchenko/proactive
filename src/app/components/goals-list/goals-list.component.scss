@@ -29,6 +29,27 @@
     display: flex;
     justify-content: center;
     padding-top: 5rem;
+
+    @media screen and (max-width: 1024px) {
+       flex-wrap: wrap;
+
+       .list-item {
+           width: 50%;
+           margin: 2rem 0;
+       }
+    }
+
+    @media screen and (max-width: 600px) {
+        .list-item {
+            width: 100%;
+            padding: 0 0 0 0;
+
+            .content {
+                font-size: 1.5rem;
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 .list-item {
@@ -42,7 +63,7 @@
     padding-top: 2rem;
     padding-left: .5rem;
     padding-right: .5rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     max-width: 18rem;
 }

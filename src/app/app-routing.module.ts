@@ -5,11 +5,10 @@ import {
     CharityComponent,
     ContactsComponent,
     DocumentsComponent,
-    PartnersComponent,
     ReportComponent
 } from './pages/index';
 
-const routes : Routes = [
+const routes: Routes = [
     {
         path: 'home',
         component: HomeComponent
@@ -21,7 +20,7 @@ const routes : Routes = [
         component: DocumentsComponent
     }, {
         path: 'partners',
-        component: PartnersComponent
+        loadChildren: 'app/pages/partners/partners.module#PartnersModule'
     }, {
         path: 'report',
         component: ReportComponent

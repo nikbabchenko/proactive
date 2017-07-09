@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'pr-home',
@@ -8,36 +9,37 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   items: Array<any>;
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
+    this.titleService.setTitle('ОО "Ассоциация инициативных инвалидов"');
+
     this.items = [
       {
         image: '/assets/images/1.jpg',
-        text: 'Післяопераційна реабілітація. Діагноз - стато-локомоторна та кінестетична, мозжечкова дизартрія',
-        link: [],
+        text: 'Послеоперационная реабилитация. Диагноз - стато-лакомоторная и кинестетическая, мозжечковая дизартрия',
+        link: ['/charity'],
       },
       {
-        image: '/assets/images/2.jpg',
-        text: 'Придбання інвалідної коляски',
-        link: [],
+        image: '/assets/images/kolyaska_min.jpg',
+        text: 'Покупка инвалидной коляски',
+        link: ['/charity'],
       },
       {
-        image: '/assets/images/3.jpg',
-        text: 'Придбання мобільного смартфону для інвалідів',
-        link: [],
+        image: '/assets/images/smartphone.jpg',
+        text: 'Покупка смартфона для инвалидов',
+        link: ['/charity'],
       },
       {
-        image: '/assets/images/4.jpg',
-        text: 'Придбання будівельних матеріалів для поточного ремонту приміщення',
-        link: [],
+        image: '/assets/images/stenka_3.jpg',
+        text: 'Покупка Шведской стенки "Персей" и спортивного мата',
+        link: ['/charity'],
       },
       {
         image: '/assets/images/5.jpg',
-        text: 'Придбання будівельних матеріалів для поточного ремонту приміщення',
-        link: [],
+        text: 'Покупка инвалидной коляски',
+        link: ['/charity'],
       }
     ];
   }
-
 }

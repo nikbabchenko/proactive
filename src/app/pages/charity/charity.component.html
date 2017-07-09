@@ -1,3 +1,37 @@
-<p>
-  charity works!
-</p>
+<pr-image-header
+    small="true"
+    title="Благотворительность"
+    image="/assets/images/6.jpg">
+</pr-image-header>
+
+<div class="charity-table-wrapper">
+    <div class="charity-table container">
+        <div class="charity-table-row header">
+            <div class="charity-table-item">
+                Оказана помощь
+            </div>
+            <div class="charity-table-item">
+                Цель
+            </div>
+            <div class="charity-table-item">
+                Сумма
+            </div>
+            <div class="charity-table-item">
+                Дополнительная информация
+            </div>
+        </div>
+        <div class="charity-table-row" *ngFor="let item of charityItems">
+            <div class="charity-table-item">
+                {{ item.name }}
+            </div>
+            <div class="charity-table-item">
+                {{ item.goal }}
+            </div>
+            <div class="charity-table-item">
+                {{ item.summ }}
+            </div>
+            <div class="charity-table-item" [innerHTML]="item.add">
+            </div>
+        </div>
+    </div>
+</div>

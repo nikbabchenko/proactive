@@ -1,20 +1,19 @@
 <nav class="main-nav">
     <ul>
         <li *ngFor="let item of items">
-            <a [routerLink]="item.link">{{ item.title }}</a>
+            <a [routerLink]="item.link" routerLinkActive="active">{{ item.title }}</a>
         </li>
     </ul>
 </nav>
-<button class="nav-toggle" (click)="isOpenNav = !isOpenNav">
-    <ng-template #cross><pr-icon class="cross"></pr-icon></ng-template>
-
-    <pr-icon *ngIf="!isOpenNav; else cross" class="sandwich"></pr-icon>
+<button class="nav-toggle" (click)="isOpenNav = !isOpenNav" id="nav-toggle" #navbutton>
+    <pr-icon class="cross" [class.hidden]="!isOpenNav"></pr-icon>
+    <pr-icon [class.hidden]="isOpenNav" class="sandwich"></pr-icon>
 </button>
 
 <nav class="mobile-nav" [class.active]="isOpenNav">
     <ul>
         <li *ngFor="let item of items">
-            <a [routerLink]="item.link">{{ item.title }}</a>
+            <a [routerLink]="item.link" routerLinkActive="active">{{ item.title }}</a>
         </li>
     </ul>
 </nav>

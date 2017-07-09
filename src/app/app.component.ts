@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 @Component({
     selector: 'pr-root',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    title = 'pr works!';
+    constructor(private render: Renderer2) {}
+
+    onDeactivate() {
+        // to start next page from the top
+        this.render.setProperty(document.body, 'scrollTop', 0);
+    }
 }

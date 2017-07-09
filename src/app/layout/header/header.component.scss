@@ -4,33 +4,36 @@
     .logo {
         #{'/deep/'} {
             svg {
+                display: block;
                 fill: $white;
             }
         }
     }
-
     overflow-x: hidden;
-    z-index: 3;
 }
 
 header {
     box-shadow: 0 4px 2px -2px rgba($black, .5);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     min-height: $header-height;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background: $white;
+    z-index: 4;
 }
 
 .logo {
     background: $green;
     display: flex;
+    align-self: stretch;
     min-width: 12rem;
 
     pr-icon {
+        display: block;
         margin: auto;
     }
 }

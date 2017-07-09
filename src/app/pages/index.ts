@@ -1,6 +1,6 @@
-export * from './home/home.component';
-export * from './contacts/contacts.component';
-export * from './documents/documents.component';
-export * from './partners/partners.component';
-export * from './report/report.component';
-export * from './charity/charity.component';
+export { HomeComponent } from './home/home.component';
+export { ContactsComponent } from './contacts/contacts.component';
+export { DocumentsComponent } from './documents/documents.component';
+export { ReportComponent } from './report/report.component';
+export { CharityComponent } from './charity/charity.component';
+export { PartnersModule } from './partners/partners.module';

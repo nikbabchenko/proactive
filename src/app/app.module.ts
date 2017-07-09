@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent, FooterComponent, NavComponent } from './layout/index';
 import { IconComponent } from '../app/components/icon/icon.component';
 import {
-    ImageHeaderComponent,
     AccentBlockComponent,
     GoalsListComponent,
     CharityItemComponent,
@@ -18,12 +17,13 @@ import {
     HomeComponent,
     DocumentsComponent,
     CharityComponent,
-    PartnersComponent,
     ReportComponent,
     ContactsComponent
 } from './pages/index';
 
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
+import { MobileNavService } from './shared/mobile-nav.service';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
     declarations: [
@@ -32,7 +32,6 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
         FooterComponent,
         NavComponent,
         IconComponent,
-        ImageHeaderComponent,
         AccentBlockComponent,
         HomeComponent,
         GoalsListComponent,
@@ -41,17 +40,20 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
         SafeHtmlPipe,
         DocumentsComponent,
         CharityComponent,
-        PartnersComponent,
         ReportComponent,
-        ContactsComponent
+        ContactsComponent,
     ],
     imports: [
         BrowserModule,
         FormsModule,
         HttpModule,
-        AppRoutingModule
+        AppRoutingModule,
+        SharedModule.forRoot()
     ],
-    providers: [],
+    providers: [
+        MobileNavService,
+        Title
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -50,17 +50,48 @@ h3 {
     font-size: 2rem;
 }
 
+h4 {
+    font-size: 1.8rem;
+}
+
 .main-content {
     font-size: 1rem;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: .8rem 0;
+    hyphens: auto;
 }
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.link {
+    color: #1565C0;
+    text-decoration: underline;
+    word-break: break-all;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.popup {
+    cursor: pointer;
 }

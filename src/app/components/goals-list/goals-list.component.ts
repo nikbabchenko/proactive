@@ -18,6 +18,10 @@ export class GoalsListComponent implements OnInit {
     {
       icon: 'person',
       text: 'Интеграция инвалидов в общество'
+    },
+    {
+      icon: 'lawyer',
+      text: 'Осуществление общественного контроля за соблюдением прав инвалидов'
     }
   ];
   constructor() { }

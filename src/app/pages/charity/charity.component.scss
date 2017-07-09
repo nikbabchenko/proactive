@@ -1,0 +1,48 @@
+@import '../../styles/app';
+
+.charity-table-wrapper {
+    overflow-x: auto;
+}
+
+.charity-table {
+    margin: 2rem auto;
+    min-width: 700px;
+    font-size: 1.2rem;
+}
+
+.charity-table-row {
+    display: flex;
+
+    .charity-table-item {
+        flex: 0 0 auto;
+        padding: .5rem 1rem;
+        border: 1px solid $l-gray;
+
+
+        &:first-child {
+            width: 20%;
+            word-break: break-all;
+        }
+
+        &:nth-child(2) {
+            width: 35%;
+        }
+
+        &:nth-child(3) {
+            width: 20%;
+        }
+
+        &:nth-child(4) {
+            width: 25%;
+        }
+    }
+
+    &.header {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    &:nth-child(2n) {
+        background: rgba($lighter-gray, .5);
+    }
+}

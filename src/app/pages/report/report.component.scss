@@ -1,0 +1,36 @@
+@import '../../styles/app';
+
+.report-info {
+    padding: 2rem 0;
+}
+
+.table-wrapper {
+    margin: 0 1rem;
+    overflow-x: auto;
+}
+
+table {
+    border: none;
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+    font-size: 1.2rem;
+
+    tr {
+        th {
+            border-bottom: 2px solid $black;
+            padding: .5rem 1rem;
+            text-align: left;
+            font-weight: 700;
+        }
+
+        td {
+            border-bottom: 1px solid $l-gray;
+            padding: .5rem 1rem;
+
+            &:first-child {
+                font-weight: 700;
+            }
+        }
+    }
+}

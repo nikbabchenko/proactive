@@ -10,12 +10,22 @@
     height: calc(100vh - 250px);
     min-height: 350px;
 
+    @media screen and (max-width: 1024px) {
+        height: auto;
+        min-height: 300px;
+    }
+
     &.small {
         height: 300px;
         min-height: 1px;
         justify-content: flex-end;
         position: relative;
         z-index: 1;
+
+        @media screen and (max-width: 1024px) {
+            height: auto;
+            min-height: 150px;
+        }
 
         &:before {
             content: '';
@@ -29,6 +39,14 @@
         }
 
         .image-header__content {
+            @media screen and (max-width: 1024px) {
+                padding-left: 1rem;
+
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+
             h2 {
                 span {
                     background: $black;
@@ -42,6 +60,14 @@
         width: 80%;
         max-width: 60rem;
         padding-left: 12%;
+
+        @media screen and (max-width: 1024px) {
+            padding-left: 2rem;
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
 
         h2 {
             font-size: 3rem;

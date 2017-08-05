@@ -1,4 +1,8 @@
 import { Component, Renderer2 } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { environment } from '../environments/environment';
+
+declare const ga: any;
 
 @Component({
     selector: 'pr-root',
@@ -6,7 +10,18 @@ import { Component, Renderer2 } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    constructor(private render: Renderer2) {}
+    constructor(private render: Renderer2,
+        private router: Router) {
+            this.router.events.subscribe(
+                event => {
+                    if (event instanceof NavigationEnd) {
+                        if (environment.production) {
+                            ga('send', 'pageview');
+                        }
+                    }
+                }
+            )
+        }
 
     onDeactivate() {
         // to start next page from the top

@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="charity-table-row" *ngFor="let item of charityItems">
-            <div class="charity-table-item">
+            <div class="charity-table-item" [attr.id]="item.id">
                 {{ item.name }}
             </div>
             <div class="charity-table-item">

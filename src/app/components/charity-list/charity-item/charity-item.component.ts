@@ -14,6 +14,8 @@ export class CharityItemComponent implements OnInit {
   link: Array<any>;
   @Input()
   additionalClass: string;
+  @Input()
+  fragment: string;
 
   constructor() { }
 

@@ -7,7 +7,7 @@ ng s -w
 
 ## About the project
 
-A project of social organisation that helps disabled people
+A project of social organisation that helps disabled people. <br/>
 Was founded by disabled people.
 
 

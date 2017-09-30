@@ -26,5 +26,6 @@ export class AppComponent {
     onDeactivate() {
         // to start next page from the top
         this.render.setProperty(document.body, 'scrollTop', 0);
+        this.render.setProperty(document.documentElement, 'scrollTop', 0);
     }
 }

@@ -82,10 +82,11 @@ export class CharityComponent implements AfterViewInit, OnDestroy  {
         if (fragment) {
           let hashElement = document.getElementById(fragment);
           if (hashElement) {
+            let scrollTop = hashElement.getBoundingClientRect().top;
             setTimeout(() => {
-              hashElement.scrollIntoView();
-              document.body.scrollTop -= document.getElementById('header').offsetHeight + 10;
-            }, 300);
+              document.body.scrollTop = scrollTop - document.getElementById('header').offsetHeight - 10;
+              document.documentElement.scrollTop = scrollTop - document.getElementById('header').offsetHeight - 10;
+            }, 200);
           }
         }
     });

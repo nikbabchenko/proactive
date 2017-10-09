@@ -1,5 +1,5 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 import {
     HomeComponent,
     CharityComponent,
@@ -7,6 +7,10 @@ import {
     DocumentsComponent,
     ReportComponent
 } from './pages/index';
+
+import {
+    ResistanceComponent
+} from './pages/resistance/resistance.component';
 
 const routes: Routes = [
     {
@@ -27,7 +31,12 @@ const routes: Routes = [
     }, {
         path: 'contacts',
         component: ContactsComponent
-    }, {
+    },
+    {
+        path: 'resistance',
+        component: ResistanceComponent
+    },
+    {
         path: '',
         redirectTo: '/home',
         pathMatch: 'full'
@@ -38,4 +47,4 @@ const routes: Routes = [
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

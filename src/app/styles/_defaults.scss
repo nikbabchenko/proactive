@@ -95,3 +95,26 @@ strong {
 .popup {
     cursor: pointer;
 }
+
+// lists
+
+ul {
+    &.list {
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            &:after {
+                display: block;
+                content: '';
+                position: absolute;
+                top: .4em;
+                left: 0;
+                width: 3px;
+                height: 3px;
+                background-color: $white;
+                border: 2px solid $m-color;
+                border-radius: 100%;
+            }
+        }
+    }
+}

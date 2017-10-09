@@ -24,6 +24,7 @@ import {
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { MobileNavService } from './shared/mobile-nav.service';
 import { SharedModule } from './shared/shared.module';
+import { ResistanceComponent } from './pages/resistance/resistance.component';
 
 @NgModule({
     declarations: [
@@ -42,6 +43,7 @@ import { SharedModule } from './shared/shared.module';
         CharityComponent,
         ReportComponent,
         ContactsComponent,
+        ResistanceComponent,
     ],
     imports: [
         BrowserModule,

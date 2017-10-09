@@ -16,7 +16,8 @@ export class HeaderComponent implements OnInit {
         {title: 'Благотворительность', link: ['/charity']},
         {title: 'Партнеры', link: ['/partners']},
         {title: 'Отчет', link: ['/report']},
-        {title: 'Контакты', link: ['/contacts']}
+        {title: 'Противодействие чиновников', link: ['/resistance']},
+        {title: 'Контакты', link: ['/contacts']},
     ];
   }
 

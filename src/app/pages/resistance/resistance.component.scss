@@ -1,0 +1,16 @@
+@import '../../styles/app';
+
+.resistance {
+    padding: 0 $n-padding;
+    margin: 2rem auto;
+
+    &__item {
+        margin: 2rem 0;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+

@@ -8,6 +8,9 @@ import {
     ReportComponent
 } from './pages/index';
 
+import { ZvernennjaDoOrganivComponent } from './pages/articles/zvernennja-do-organiv/zvernennja-do-organiv.component';
+import { ArticlesComponent } from './pages/articles/articles.component';
+
 import {
     ResistanceComponent
 } from './pages/resistance/resistance.component';
@@ -37,9 +40,23 @@ const routes: Routes = [
         component: ResistanceComponent
     },
     {
+        path: 'articles',
+        component: ArticlesComponent,
+        children: [
+            {
+                path: 'zvernennja-do-pravoohoronnih-organiv',
+                component: ZvernennjaDoOrganivComponent
+            }
+        ]
+    },
+    {
         path: '',
         redirectTo: '/home',
         pathMatch: 'full'
+    },
+    {
+        path: '**',
+        redirectTo: '/home'
     }
 ];
 

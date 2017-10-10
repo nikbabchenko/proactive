@@ -25,6 +25,8 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { MobileNavService } from './shared/mobile-nav.service';
 import { SharedModule } from './shared/shared.module';
 import { ResistanceComponent } from './pages/resistance/resistance.component';
+import { ArticlesComponent } from './pages/articles/articles.component';
+import { ZvernennjaDoOrganivComponent } from './pages/articles/zvernennja-do-organiv/zvernennja-do-organiv.component';
 
 @NgModule({
     declarations: [
@@ -44,6 +46,8 @@ import { ResistanceComponent } from './pages/resistance/resistance.component';
         ReportComponent,
         ContactsComponent,
         ResistanceComponent,
+        ArticlesComponent,
+        ZvernennjaDoOrganivComponent,
     ],
     imports: [
         BrowserModule,

@@ -65,6 +65,24 @@ export class CharityComponent implements AfterViewInit, OnDestroy  {
       goal: 'Приобретение медицинского оборудования',
       summ: '6 553 грн.',
       add: '<img src="/assets/images/lambov2.jpg" alt="Приобретение лекарственных препаратов" class="responsive-image popup">'
+    },
+    {
+      name: 'Кукурудзяк В.Г.',
+      goal: 'Приобретение медицинского препарата Артрум 75',
+      summ: '11 400 грн.',
+      add: '<img src="/assets/images/artrum.jpg" alt="Кукурудзяк В.Г. Приобретение медицинского препарата Артрум 75" class="responsive-image popup">'
+    },
+    {
+      name: 'Участник АТО <br /> Шкуренко О.О.',
+      goal: 'Приобретение медицинских препаратов',
+      summ: '13 576 грн.',
+      add: '<img src="/assets/images/12.jpg" alt="Участник АТО Шкуренко О.О. приобретение медицинских препаратов" class="responsive-image">'
+    },
+    {
+      name: 'Участник АТО <br /> Кишка В.В.',
+      goal: 'Приобретение комплекса фиксаторов для накостного остеосинтеза голени и надлокотника',
+      summ: '11 400 грн.',
+      add: '<img src="/assets/images/kishka.jpg" alt="Приобретение комплекса фиксаторов для накостного остеосинтеза голени и надлокотника" class="responsive-image popup">'
     }
   ];
   constructor(private modalService: ModalService,

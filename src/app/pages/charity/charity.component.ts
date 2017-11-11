@@ -83,6 +83,12 @@ export class CharityComponent implements AfterViewInit, OnDestroy  {
       goal: 'Приобретение комплекса фиксаторов для накостного остеосинтеза голени и надлокотника',
       summ: '11 400 грн.',
       add: '<img src="/assets/images/kishka.jpg" alt="Приобретение комплекса фиксаторов для накостного остеосинтеза голени и надлокотника" class="responsive-image popup">'
+    },
+    {
+      name: 'Учасник АТО <br /> Андросов Р.И.',
+      goal: 'Приобретение медицинских препаратов',
+      summ: '11 500 грн.',
+      add: '<img src="/assets/images/androsov.jpg" alt="Приобретение комплекса фиксаторов для накостного остеосинтеза голени и надлокотника" class="responsive-image popup">'
     }
   ];
   constructor(private modalService: ModalService,

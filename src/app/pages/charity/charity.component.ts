@@ -89,6 +89,12 @@ export class CharityComponent implements AfterViewInit, OnDestroy  {
       goal: 'Приобретение медицинских препаратов',
       summ: '11 500 грн.',
       add: '<img src="/assets/images/androsov.jpg" alt="Приобретение комплекса фиксаторов для накостного остеосинтеза голени и надлокотника" class="responsive-image popup">'
+    },
+    {
+      name: 'Комунальное учреждение "Одесская специализировання общеобразовательная школа-интернат №97 I-II ступеней"',
+      goal: 'Обеспечение кроватями и партами',
+      summ: '33 500 грн.',
+      add: '<img src="/assets/images/school-1.jpg" alt="Обеспечение кроватями и партами" class="responsive-image popup">'
     }
   ];
   constructor(private modalService: ModalService,

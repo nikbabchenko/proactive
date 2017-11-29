@@ -2,6 +2,8 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
+import { ShareButtonsModule } from 'ngx-sharebuttons';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -54,7 +56,9 @@ import { ZvernennjaDoOrganivComponent } from './pages/articles/zvernennja-do-org
         FormsModule,
         HttpModule,
         AppRoutingModule,
-        SharedModule.forRoot()
+        SharedModule.forRoot(),
+        HttpClientModule,
+        ShareButtonsModule.forRoot()
     ],
     providers: [
         MobileNavService,

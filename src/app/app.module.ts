@@ -29,6 +29,7 @@ import { SharedModule } from './shared/shared.module';
 import { ResistanceComponent } from './pages/resistance/resistance.component';
 import { ArticlesComponent } from './pages/articles/articles.component';
 import { ZvernennjaDoOrganivComponent } from './pages/articles/zvernennja-do-organiv/zvernennja-do-organiv.component';
+import { EugeneLambovComponent } from './pages/articles/eugene-lambov/eugene-lambov.component';
 
 @NgModule({
     declarations: [
@@ -50,6 +51,7 @@ import { ZvernennjaDoOrganivComponent } from './pages/articles/zvernennja-do-org
         ResistanceComponent,
         ArticlesComponent,
         ZvernennjaDoOrganivComponent,
+        EugeneLambovComponent,
     ],
     imports: [
         BrowserModule,

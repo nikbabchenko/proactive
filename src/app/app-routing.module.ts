@@ -1,3 +1,4 @@
+import {EugeneLambovComponent} from './pages/articles/eugene-lambov/eugene-lambov.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {
@@ -46,6 +47,10 @@ const routes: Routes = [
             {
                 path: 'zvernennja-do-pravoohoronnih-organiv',
                 component: ZvernennjaDoOrganivComponent
+            },
+            {
+                path: 'eugene-lambov',
+                component: EugeneLambovComponent
             }
         ]
     },

@@ -11,5 +11,52 @@
 }
 
 
+.news {
+    padding: 0.5rem;
+
+    &__item {
+        display: flex;
+        position: relative;
+
+        &:hover {
+            box-shadow: 0px 0px 8px 4px rgba(0,0,0,.1);
+        }
+    }
+
+    &__image {
+        width: 16rem;
+        height: 15rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        flex: 0 0 auto;
+        padding: 0 1rem;
+    }
+
+    &__content {
+        padding: .5rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    &__title {
+        font-weight: bold;
+        padding-bottom: .5rem;
+    }
+
+    &__date {
+        font-style: italic;
+        color: $l-gray;
+        padding-bottom: 1.5rem;
+    }
+
+    &__link {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+}
+
 
 

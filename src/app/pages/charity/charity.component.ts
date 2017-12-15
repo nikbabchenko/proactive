@@ -95,6 +95,18 @@ export class CharityComponent implements AfterViewInit, OnDestroy  {
       goal: 'Обеспечение кроватями и партами',
       summ: '33 500 грн.',
       add: '<img src="/assets/images/school-1.jpg" alt="Обеспечение кроватями и партами" class="responsive-image popup">'
+    },
+    {
+      name: 'Оберин С.Л.',
+      goal: 'Приобретение медицинского препарата для лечения деформирующего артроза',
+      summ: '11 400 грн.',
+      add: '<img src="/assets/images/overin.jpg" alt="Приобретение медицинского препарата для лечения деформирующего артроза" class="responsive-image popup">'
+    },
+    {
+      name: 'Креч В.М.',
+      goal: 'Оплата компьютерной томографии КЛ «Феофания»',
+      summ: '11 700 грн.',
+      add: '<img src="/assets/images/crech.jpg" alt="Оплата компьютерной томографии КЛ «Феофания»" class="responsive-image popup">'
     }
   ];
   constructor(private modalService: ModalService,

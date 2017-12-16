@@ -1,3 +1,5 @@
+import {SafeHtmlPipe} from './../pipes/safe-html.pipe';
+import {LoaderComponent} from './../components/loader/loader.component';
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ImageHeaderComponent, ModalComponent } from '../components/index';
@@ -9,11 +11,16 @@ import { ModalService } from '../shared/modal.service';
   ],
   declarations: [
     ImageHeaderComponent,
-    ModalComponent
+    ModalComponent,
+    LoaderComponent,
+    SafeHtmlPipe
+
   ],
   exports: [
     ImageHeaderComponent,
-    ModalComponent
+    ModalComponent,
+    LoaderComponent,
+    SafeHtmlPipe
   ]
 })
 export class SharedModule {

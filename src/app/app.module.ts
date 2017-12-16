@@ -1,7 +1,7 @@
+import {ArticlesService} from './pages/articles/articles.service';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { ShareButtonsModule } from 'ngx-sharebuttons';
 
@@ -23,13 +23,9 @@ import {
     ContactsComponent
 } from './pages/index';
 
-import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { MobileNavService } from './shared/mobile-nav.service';
 import { SharedModule } from './shared/shared.module';
 import { ResistanceComponent } from './pages/resistance/resistance.component';
-import { ArticlesComponent } from './pages/articles/articles.component';
-import { ZvernennjaDoOrganivComponent } from './pages/articles/zvernennja-do-organiv/zvernennja-do-organiv.component';
-import { EugeneLambovComponent } from './pages/articles/eugene-lambov/eugene-lambov.component';
 
 @NgModule({
     declarations: [
@@ -43,28 +39,24 @@ import { EugeneLambovComponent } from './pages/articles/eugene-lambov/eugene-lam
         GoalsListComponent,
         CharityListComponent,
         CharityItemComponent,
-        SafeHtmlPipe,
         DocumentsComponent,
         CharityComponent,
         ReportComponent,
         ContactsComponent,
-        ResistanceComponent,
-        ArticlesComponent,
-        ZvernennjaDoOrganivComponent,
-        EugeneLambovComponent,
+        ResistanceComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule,
         AppRoutingModule,
+        ReactiveFormsModule,
         SharedModule.forRoot(),
-        HttpClientModule,
-        ShareButtonsModule.forRoot()
+        HttpClientModule
     ],
     providers: [
         MobileNavService,
-        Title
+        Title,
+        ArticlesService
     ],
     bootstrap: [AppComponent]
 })

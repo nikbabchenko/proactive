@@ -1,6 +1,8 @@
+import {ArticleContentComponent} from './pages/articles/article-content/article-content.component';
+import {LoginComponent} from './pages/login/login.component';
 import {EugeneLambovComponent} from './pages/articles/eugene-lambov/eugene-lambov.component';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
 import {
     HomeComponent,
     CharityComponent,
@@ -8,9 +10,6 @@ import {
     DocumentsComponent,
     ReportComponent
 } from './pages/index';
-
-import { ZvernennjaDoOrganivComponent } from './pages/articles/zvernennja-do-organiv/zvernennja-do-organiv.component';
-import { ArticlesComponent } from './pages/articles/articles.component';
 
 import {
     ResistanceComponent
@@ -42,17 +41,7 @@ const routes: Routes = [
     },
     {
         path: 'articles',
-        component: ArticlesComponent,
-        children: [
-            {
-                path: 'zvernennja-do-pravoohoronnih-organiv',
-                component: ZvernennjaDoOrganivComponent
-            },
-            {
-                path: 'eugene-lambov',
-                component: EugeneLambovComponent
-            }
-        ]
+        loadChildren: 'app/pages/articles/articles/articles.module#ArticlesModule'
     },
     {
         path: '',

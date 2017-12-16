@@ -1,6 +1,6 @@
 <div class="articles container">
   <router-outlet></router-outlet>
-  <div class="sb-group sb-outline-fill" style="font-size: 14px;">
+  <div class="sb-group sb-outline-fill" style="font-size: 14px;" *ngIf="isLoaded">
     <share-button button="facebook">
       Facebook
     </share-button>

@@ -1,3 +1,13 @@
+// Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Optional
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+
 /* You can add global styles to this file, and also import other style files */
 @import './app/styles/vars';
 @import './app/styles/defaults';
@@ -5,8 +15,14 @@
 @import '~ngx-sharebuttons/styles/themes/outline/outline-fill-theme.scss';
 @import '~font-awesome/css/font-awesome.min.css';
 
+
+
 .sb-outline-fill .sb-wrapper {
     > div {
         padding-top: 3px;
     }
+}
+
+.aligncenter {
+    margin: 0 auto;
 }

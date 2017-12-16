@@ -1,7 +1,6 @@
 import { Component, Renderer2 } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { environment } from '../environments/environment';
-
 declare const ga: any;
 
 @Component({
@@ -12,16 +11,19 @@ declare const ga: any;
 export class AppComponent {
     constructor(private render: Renderer2,
         private router: Router) {
-            this.router.events.subscribe(
-                event => {
-                    if (event instanceof NavigationEnd) {
-                        if (environment.production) {
-                            ga('send', 'pageview');
-                        }
+        this.router.events.subscribe(
+            event => {
+                if (event instanceof NavigationEnd) {
+                    if (environment.production) {
+                        ga('send', 'pageview');
                     }
                 }
-            )
-        }
+            }
+        )
+    }
+
+    ngOnInit() {
+    }
 
     onDeactivate() {
         // to start next page from the top

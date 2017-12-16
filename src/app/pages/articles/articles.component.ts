@@ -1,3 +1,5 @@
+import {ArticlesService} from './articles.service';
+import {ActivatedRoute} from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./articles.component.scss']
 })
 export class ArticlesComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  isLoaded: boolean;
+  constructor(private articles: ArticlesService) {
   }
 
+  ngOnInit() {
+    this.articles.isLoaded().subscribe(
+      (data: boolean) => {
+        this.isLoaded = data;
+      });
+  }
 }

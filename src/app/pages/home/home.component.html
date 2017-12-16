@@ -2,18 +2,23 @@
 <pr-accent-block subtitle="Юридический адрес: с. Фонтанка, Лиманский район, Одесская область, ул. Центральная, 40, кв. 10"></pr-accent-block>
 <pr-goals-list></pr-goals-list>
 
-<div class="news">
-    <article class="news__item">
-        <div class="news__image" style="background-image:url('/assets/images/eugene.jpg');">
+<h3 class="text-center">Последние события</h3>
+<div class="news" *ngIf="articles; else loader;">
+    <article class="news__item" *ngFor="let article of articles">
+        <div class="news__image"  [style.background-image]="'url(' + (article?.better_featured_image?.source_url ? article?.better_featured_image?.source_url : '') + ')'">
         </div>
         <div class="news__content">
-            <div class="news__title">Евгений Ламбов</div>
-            <div class="news__date">15.12.2017</div>
-            <div class="news__text">Есть в Одесской области село Кремидовка - не то что бы забытый богом уголок, но и не центр вселенной. И живет в Кремидовке 26-летний симпатичный парень Женя. Про таких говорят – «светлый». Способность смотреть на мир широко открытыми глазами Женя не утратил даже несмотря на то, что в пятнадцать лет его ждал страшный удар – он стал инвалидом...</div>
+            <div class="news__title" [innerHTML]="article?.title?.rendered"></div>
+            <div class="news__date">{{ article?.date | date: 'dd.MM.yyyy' }}</div>
+            <div class="news__text" [innerHTML]="article?.excerpt?.rendered"></div>
         </div>
-        <a class="news__link" [routerLink]="['/articles/eugene-lambov']"></a>
+        <a class="news__link" [routerLink]="['/articles/' + article?.id]"></a>
     </article>
 </div>
+
+<ng-template #loader>
+    <pr-loader></pr-loader>
+</ng-template>
 
 <div class="charity">
     <h3>Благотворительность</h3>

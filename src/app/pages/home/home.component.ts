@@ -1,3 +1,4 @@
+import {ArticlesService} from './../articles/articles.service';
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
@@ -8,11 +9,14 @@ import { Title } from '@angular/platform-browser';
 })
 export class HomeComponent implements OnInit {
   items: Array<any>;
+  articles: any[];
 
-  constructor(private titleService: Title) { }
+  constructor(private titleService: Title,
+    private articleService: ArticlesService) { }
 
   ngOnInit() {
     this.titleService.setTitle('ОО "Ассоциация инициативных инвалидов"');
+    this.setArticles();
 
     this.items = [
       {
@@ -46,5 +50,13 @@ export class HomeComponent implements OnInit {
         fragment: 'preparaty'
       }
     ];
+  }
+
+  setArticles() {
+    this.articleService.getArticles()
+      .subscribe((data: any[]) => {
+        this.articles = data;
+        console.log(data);
+      }, err => console.log(err));
   }
 }

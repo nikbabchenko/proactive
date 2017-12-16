@@ -1,0 +1,11 @@
+<ng-container *ngIf="article; else loader;">
+    <h3 class="text-center" [innerHTML]="article?.title.rendered"></h3>
+    <div class="article-content">
+      <div [innerHTML]="article.content.rendered | safeHtml"></div>
+    </div>
+</ng-container>
+
+<ng-template #loader>
+  <pr-loader></pr-loader>
+</ng-template>
+

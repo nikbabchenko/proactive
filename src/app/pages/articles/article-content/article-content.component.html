@@ -3,6 +3,13 @@
     <div class="article-content">
       <div [innerHTML]="article.content.rendered | safeHtml"></div>
     </div>
+    <div class="sb-group sb-outline-fill" style="font-size: 14px;">
+        <share-button button="facebook" [title]="article?.title.rendered" [description]="data?.excerpt?.rendered" [image]="article?.better_featured_image?.source_url ? article?.better_featured_image?.source_url : ''">
+          Facebook
+        </share-button>
+        <share-button button="twitter">Twitter</share-button>
+        <share-button button="copy">Скопировать ссылку</share-button>
+      </div>
 </ng-container>
 
 <ng-template #loader>

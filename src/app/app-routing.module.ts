@@ -1,5 +1,4 @@
 import {ArticleContentComponent} from './pages/articles/article-content/article-content.component';
-import {LoginComponent} from './pages/login/login.component';
 import {EugeneLambovComponent} from './pages/articles/eugene-lambov/eugene-lambov.component';
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';

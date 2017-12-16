@@ -8,14 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./articles.component.scss']
 })
 export class ArticlesComponent implements OnInit {
-  isLoaded: boolean;
   constructor(private articles: ArticlesService) {
   }
 
   ngOnInit() {
-    this.articles.isLoaded().subscribe(
-      (data: boolean) => {
-        this.isLoaded = data;
-      });
   }
 }

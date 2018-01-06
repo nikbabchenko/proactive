@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "_heroku":      "https://www.angularonrails.com/deploy-rails-application-angular-cli-webpack-front-end/",
     "ng": "ng",
     "start": "http-server dist/",
     "build": "ng build --aot --prod --build-optimizer",

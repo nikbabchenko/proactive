@@ -5,12 +5,14 @@
   "scripts": {
     "_heroku":      "https://www.angularonrails.com/deploy-rails-application-angular-cli-webpack-front-end/",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "http-server dist/",
     "build": "ng build --aot --prod --build-optimizer",
     "build:server": "ng serve --aot --prod --build-optimizer",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "preinstall": "npm install -g http-server",
+    "postinstall": "ng build --target=production"
   },
   "private": true,
   "dependencies": {

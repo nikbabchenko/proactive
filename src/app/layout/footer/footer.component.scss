@@ -8,3 +8,16 @@ footer {
     min-height: 5rem;
     padding: 0 $n-padding;
 }
+
+.fb-link {
+    color: $white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 2rem;
+    transition: opacity .3s;
+
+    &:hover {
+        opacity: .8;
+    }
+}

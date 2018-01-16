@@ -20,6 +20,7 @@
       "prefix": "pr",
       "styles": [
         "../node_modules/reset.css/reset.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
         "styles.scss"
       ],
       "scripts": [

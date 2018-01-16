@@ -1,5 +1,4 @@
 @import '../../styles/app';
-
 :host {
     .logo {
         #{'/deep/'} {
@@ -11,6 +10,7 @@
     }
     overflow-x: hidden;
 }
+
 
 header {
     box-shadow: 0 4px 2px -2px rgba($black, .5);
@@ -31,7 +31,6 @@ header {
     display: flex;
     align-self: stretch;
     min-width: 12rem;
-
     pr-icon {
         display: block;
         margin: auto;

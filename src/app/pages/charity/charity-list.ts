@@ -113,5 +113,11 @@ export const charityList = [
         goal: 'Приобретение медицинских препаратов для лечения',
         summ: '11 814 грн.',
         add: '<img src="/assets/images/natalia-cancer.jpg" alt="Приобретение медицинских препаратов для лечения" class="responsive-image popup">'
+    },
+    {
+        name: 'Комунальное учреждение "Одесская специализировання общеобразовательная школа-интернат №97 I-II ступеней"',
+        goal: 'Обеспечение учреждения необходимым оборудованием',
+        summ: '5 098 грн.',
+        add: '<img src="/assets/images/pilosos.png" alt="Обеспечение учреждения необходимым оборудованием" class="responsive-image popup">'
     }
 ];

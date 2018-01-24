@@ -9,6 +9,7 @@
     overflow-x: auto;
 }
 
+
 table {
     border: none;
     width: 100%;
@@ -18,14 +19,26 @@ table {
 
     tr {
         th {
-            border-bottom: 2px solid $black;
+            border: 1px solid $black;
             padding: .5rem 1rem;
             text-align: left;
             font-weight: 700;
+            vertical-align: middle;
+
+            &.text-center {
+                text-align: center;
+            }
+
+
+            &.small {
+                font-weight: 400;
+                padding: .5rem .5rem;
+                font-size: 1.2rem;
+            }
         }
 
         td {
-            border-bottom: 1px solid $l-gray;
+            border: 1px solid $l-gray;
             padding: .5rem 1rem;
 
             &:first-child {

@@ -119,5 +119,11 @@ export const charityList = [
         goal: 'Обеспечение учреждения необходимым оборудованием',
         summ: '5 098 грн.',
         add: '<img src="/assets/images/pilosos.png" alt="Обеспечение учреждения необходимым оборудованием" class="responsive-image popup">'
+    },
+    {
+        name: 'Синкевич Г.М.',
+        goal: 'Покупка инвалидной коляски',
+        summ: '4 700 грн.',
+        add: '<img src="/assets/images/sinkevich.png" alt="Покупка инвалидной коляски" class="responsive-image popup">'
     }
 ];

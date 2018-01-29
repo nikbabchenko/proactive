@@ -1,3 +1,4 @@
+import {ObrashenieComponent} from './../obrashenie/obrashenie.component';
 import {ShareButtonsModule} from 'ngx-sharebuttons';
 import {ArticlesComponent} from './../articles.component';
 import {ZvernennjaDoOrganivComponent} from './../zvernennja-do-organiv/zvernennja-do-organiv.component';
@@ -23,7 +24,8 @@ import { ArticlesRoutingModule } from './articles-routing.module';
     ArticleContentComponent,
     ArticlesComponent,
     ZvernennjaDoOrganivComponent,
-    EugeneLambovComponent
+    EugeneLambovComponent,
+    ObrashenieComponent
   ]
 })
 export class ArticlesModule { }

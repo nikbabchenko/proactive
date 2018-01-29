@@ -7,7 +7,7 @@ import { ModalService } from '../shared/modal.service';
 
 @NgModule({
   imports: [
-        CommonModule
+    CommonModule
   ],
   declarations: [
     ImageHeaderComponent,

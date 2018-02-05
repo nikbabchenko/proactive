@@ -1,5 +1,5 @@
 import {Router} from '@angular/router';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpParams} from '@angular/common/http';
 import {Injectable, EventEmitter} from '@angular/core';
 
 @Injectable()
@@ -10,8 +10,11 @@ export class ArticlesService {
         private router: Router) {
     }
 
-    getArticles() {
-        return this.http.get(`${this.API_URL}/posts?categories=2`);
+    getArticles(page = 1) {
+        let httpParams = new HttpParams();
+        httpParams = httpParams.append('categories', '2');
+        httpParams = httpParams.append('page', page.toString());
+        return this.http.get(`${this.API_URL}/posts`, {observe: 'response', params: httpParams});
     }
 
     getArticleById(id: number) {

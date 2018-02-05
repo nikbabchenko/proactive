@@ -10,13 +10,16 @@ import { Title } from '@angular/platform-browser';
 export class HomeComponent implements OnInit {
   items: Array<any>;
   articles: any[];
+  currentPage = 1;
+  pages: number;
+  pagesCount: number;
 
   constructor(private titleService: Title,
     private articleService: ArticlesService) { }
 
   ngOnInit() {
     this.titleService.setTitle('ОО "Ассоциация инициативных инвалидов"');
-    this.setArticles();
+    this.getArticles();
 
     this.items = [
       {
@@ -52,10 +55,18 @@ export class HomeComponent implements OnInit {
     ];
   }
 
-  setArticles() {
-    this.articleService.getArticles()
-      .subscribe((data: any[]) => {
-        this.articles = data;
+  getArticles(page = 1) {
+    this.currentPage = page;
+    this.articles = undefined;
+
+    this.articleService.getArticles(page ? page : undefined)
+      .subscribe((dataWithHeaders: any) => {
+        if (!this.pagesCount) {
+            this.pagesCount = dataWithHeaders.headers.get('X-WP-TotalPages');
+            this.pages = Array.apply(null, {length: this.pagesCount}).map(Number.call, Number);
+        }
+
+        this.articles = dataWithHeaders.body;
       }, err => console.log(err));
   }
 }

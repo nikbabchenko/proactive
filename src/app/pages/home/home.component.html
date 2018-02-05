@@ -2,6 +2,13 @@
 <pr-accent-block subtitle="Юридический адрес: с. Фонтанка, Лиманский район, Одесская область, ул. Центральная, 40, кв. 10"></pr-accent-block>
 <pr-goals-list></pr-goals-list>
 
+
+
+<div class="charity">
+    <h3>Благотворительность</h3>
+    <pr-charity-list [items]="items"></pr-charity-list>
+</div>
+
 <h3 class="text-center">Последние события</h3>
 <div class="news" *ngIf="articles; else loader;">
     <article class="news__item" *ngFor="let article of articles">
@@ -15,12 +22,11 @@
         <a class="news__link" [routerLink]="['/articles/' + article?.id]"></a>
     </article>
 </div>
-
+<div class="pagination">
+    <div class="pagination__item" *ngFor="let paginateItem of pages">
+        <a class="link" [class.is-current]="currentPage === paginateItem + 1" (click)="getArticles(paginateItem + 1)"> {{ paginateItem + 1 }}</a>
+    </div>
+</div>
 <ng-template #loader>
     <pr-loader></pr-loader>
 </ng-template>
-
-<div class="charity">
-    <h3>Благотворительность</h3>
-    <pr-charity-list [items]="items"></pr-charity-list>
-</div>

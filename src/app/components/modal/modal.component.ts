@@ -33,10 +33,11 @@ export class ModalComponent implements OnInit, OnDestroy {
     }
 
     open(event) {
+        const srcAttribute = event.target.src || event.target.dataset.src;
         this
             .modalImg
             .nativeElement
-            .setAttribute('src', event.target.src);
+            .setAttribute('src', srcAttribute);
 
         this
             .modalImg

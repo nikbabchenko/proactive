@@ -2,26 +2,51 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
-
 // Optional
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/buttons";
 
 /* You can add global styles to this file, and also import other style files */
+
 @import './app/styles/vars';
 @import './app/styles/defaults';
 @import '~ngx-sharebuttons/styles/share-buttons';
 @import '~ngx-sharebuttons/styles/themes/outline/outline-fill-theme';
-
-
-
 .sb-outline-fill .sb-wrapper {
-    > div {
+    >div {
         padding-top: 3px;
     }
 }
 
 .aligncenter {
     margin: 0 auto;
+}
+
+.custom-counter {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+.custom-counter li {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+}
+
+.custom-counter li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    color: black;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+b {
+    font-weight: 600;
+}
+
+a {
+    @extend .link;
 }

@@ -3,6 +3,7 @@
 .resistance {
     padding: 0 $n-padding;
     margin: 2rem auto;
+    font-size: 1.3rem;
 
     &__item {
         margin: 2rem 0;
@@ -12,5 +13,17 @@
         font-size: 1.5rem;
         font-weight: 700;
     }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.answer-block-image {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem 0;
 }
 

@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   currentPage = 1;
   pages: number;
   pagesCount: number;
+  isPending: boolean;
 
   constructor(private titleService: Title,
     private articleService: ArticlesService) { }
@@ -58,6 +59,7 @@ export class HomeComponent implements OnInit {
   getArticles(page = 1) {
     this.currentPage = page;
     this.articles = undefined;
+    this.isPending = true;
 
     this.articleService.getArticles(page ? page : undefined)
       .subscribe((dataWithHeaders: any) => {
@@ -66,7 +68,12 @@ export class HomeComponent implements OnInit {
             this.pages = Array.apply(null, {length: this.pagesCount}).map(Number.call, Number);
         }
 
+        this.isPending = false;
+
         this.articles = dataWithHeaders.body;
-      }, err => console.log(err));
+      }, err => {
+          console.log(err);
+          this.isPending = false;
+      });
   }
 }

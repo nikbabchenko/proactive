@@ -22,7 +22,7 @@
         <a class="news__link" [routerLink]="['/articles/' + article?.id]"></a>
     </article>
 </div>
-<div class="pagination">
+<div class="pagination" [class.is-pending]="isPending">
     <div class="pagination__item" *ngFor="let paginateItem of pages">
         <a class="link" [class.is-current]="currentPage === paginateItem + 1" (click)="getArticles(paginateItem + 1)"> {{ paginateItem + 1 }}</a>
     </div>

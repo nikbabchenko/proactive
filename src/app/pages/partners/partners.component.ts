@@ -1,5 +1,6 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { ModalService } from '../../shared/modal.service';
+import {ArticlesService} from './../articles/articles.service';
+import {Component, OnInit, AfterViewInit} from '@angular/core';
+import {ModalService} from '../../shared/modal.service';
 
 @Component({
   selector: 'pr-partners',
@@ -8,9 +9,12 @@ import { ModalService } from '../../shared/modal.service';
 })
 export class PartnersComponent implements OnInit, AfterViewInit {
   popupImagesArr;
-  constructor(private modalService: ModalService) { }
+  memorandums = [];
+  isPending: boolean;
+  constructor(private modalService: ModalService, private articlesService: ArticlesService) { }
 
   ngOnInit() {
+    this.getMemorandums();
   }
 
   ngAfterViewInit() {
@@ -23,5 +27,18 @@ export class PartnersComponent implements OnInit, AfterViewInit {
 
   openModal(event) {
       this.modalService.open(event);
+  }
+
+  getMemorandums() {
+    this.isPending = true;
+
+    this.articlesService.getMemorandums()
+      .subscribe((memorandumsArr: any[]) => {
+        this.isPending = false;
+        this.memorandums = memorandumsArr;
+      }, err => {
+          console.log(err);
+          this.isPending = false;
+      });
   }
 }

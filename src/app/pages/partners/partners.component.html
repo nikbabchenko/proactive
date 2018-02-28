@@ -10,12 +10,19 @@
             <h4 class="text-center">Благодарность от школы-интернат №97</h4>
             <img src="/assets/images/podjaka.jpg" alt="купленная шведская стенка Персей" class="responsive-image popup thanks"/>
         </article>
-        <article class="partners-item">
-            <h4 class="text-center">Меморандум с Одесским подразделением Общественной организации "Всеукраинский центр помощи участникам АТО"</h4>
-            <img src="/assets/images/ato/ato-1.jpg" alt="Меморандум с Всеукраинский центр помощи участникам АТО" class="responsive-image popup thanks"/>
-            <img src="/assets/images/ato/ato-2.jpg" alt="Меморандум с Всеукраинский центр помощи участникам АТО" class="responsive-image popup thanks"/>
-            <img src="/assets/images/ato/ato-3.jpg" alt="Меморандум с Всеукраинский центр помощи участникам АТО" class="responsive-image popup thanks"/>
-        </article>
+
+
+        <h3 class="text-center partners-item">Меморандумы</h3>
+        <ul class="list" *ngIf="memorandums?.length; else loader;">
+            <li *ngFor="let memorandum of memorandums">
+                <p>
+                    <a class="link" [routerLink]="['/articles/' + memorandum?.id]" [innerHTML]="memorandum?.title?.rendered"></a>
+                </p>
+            </li>
+        </ul>
+        <ng-template #loader>
+            <pr-loader></pr-loader>
+        </ng-template>
     </div>
 </div>
 

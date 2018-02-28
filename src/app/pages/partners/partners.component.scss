@@ -1,5 +1,18 @@
 @import '../../styles/app';
 
+:host {
+    ::ng-deep {
+        .list {
+            margin-top: 2rem;
+
+            li {
+                margin: 1.5rem 0;
+            }
+        }
+    }
+}
+
+
 .partners-info {
     padding: 2rem 0;
 }

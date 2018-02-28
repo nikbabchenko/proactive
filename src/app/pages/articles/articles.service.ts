@@ -21,6 +21,13 @@ export class ArticlesService {
         return this.http.get(`${this.API_URL}/posts/${id}`);
     }
 
+    getMemorandums() {
+        let httpParams = new HttpParams();
+        httpParams = httpParams.append('categories', '14');
+        httpParams = httpParams.append('order', 'asc');
+        return this.http.get(`${this.API_URL}/posts`, {params: httpParams});
+    }
+
     setLoaded() {
         this.loaded.emit(true);
     }

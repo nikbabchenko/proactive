@@ -1,7 +1,7 @@
-import {ObrashenieComponent} from './../obrashenie/obrashenie.component';
 import {ArticleContentComponent} from './../article-content/article-content.component';
-import {EugeneLambovComponent} from './../eugene-lambov/eugene-lambov.component';
-import {ZvernennjaDoOrganivComponent} from './../zvernennja-do-organiv/zvernennja-do-organiv.component';
+import {ObrashenieComponent} from './obrashenie/obrashenie.component';
+import {EugeneLambovComponent} from './eugene-lambov/eugene-lambov.component';
+import {ZvernennjaDoOrganivComponent} from './zvernennja-do-organiv/zvernennja-do-organiv.component';
 import {ArticlesComponent} from './../articles.component';
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';

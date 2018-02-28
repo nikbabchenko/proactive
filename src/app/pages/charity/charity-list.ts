@@ -125,5 +125,23 @@ export const charityList = [
         goal: 'Покупка инвалидной коляски',
         summ: '4 700 грн.',
         add: '<img src="/assets/images/sinkevich.png" alt="Покупка инвалидной коляски" class="responsive-image popup">'
+    },
+    {
+        name: 'Гасевич Богдана',
+        goal: 'Оплата услуг реабилитации',
+        summ: '7 500 грн.',
+        add: '<img src="/assets/images/charity/bogdana.png" alt="Оплата услуг реабилитации Гасевич Богдана" class="responsive-image popup">'
+    },
+    {
+        name: 'Участник АТО Андрусов Р.И.',
+        goal: 'Приобретение медицинских препаратов',
+        summ: '15 300 грн.',
+        add: '<img src="/assets/images/charity/androsov.png" alt="Приобретение медицинских препаратов" class="responsive-image popup">'
+    },
+    {
+        name: 'Участник АТО Бережной C.А.',
+        goal: 'Приобретение медицинских препаратов',
+        summ: '2 400 грн.',
+        add: '<img src="/assets/images/charity/berezhnoy.png" alt="Приобретение медицинских препаратов" class="responsive-image popup">'
     }
 ];

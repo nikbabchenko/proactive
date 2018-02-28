@@ -1,4 +1,4 @@
-import {ModalService} from './../../../shared/modal.service';
+import {ModalService} from './../../../../shared/modal.service';
 import {Component, OnInit, ViewChild, ElementRef, Renderer2} from '@angular/core';
 
 @Component({

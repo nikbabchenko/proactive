@@ -1,18 +1,7 @@
-import {ArticleContentComponent} from './pages/articles/article-content/article-content.component';
-import {EugeneLambovComponent} from './pages/articles/eugene-lambov/eugene-lambov.component';
+import {CharityComponent, ContactsComponent, DocumentsComponent, HomeComponent, ReportComponent} from './pages';
+import {ResistanceComponent} from './pages/resistance/resistance.component';
 import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
-import {
-    HomeComponent,
-    CharityComponent,
-    ContactsComponent,
-    DocumentsComponent,
-    ReportComponent
-} from './pages/index';
-
-import {
-    ResistanceComponent
-} from './pages/resistance/resistance.component';
+import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
     {

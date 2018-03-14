@@ -143,5 +143,29 @@ export const charityList = [
         goal: 'Приобретение медицинских препаратов',
         summ: '2 400 грн.',
         add: '<img src="/assets/images/charity/berezhnoy.png" alt="Приобретение медицинских препаратов" class="responsive-image popup">'
+    },
+    {
+        name: 'Комунальное учреждение "Одесская специализировання общеобразовательная школа-интернат №97 I-II ступеней"',
+        goal: 'Обеспечение учреждения необходимым оборудованием',
+        summ: '2 698 грн.',
+        add: '<img src="/assets/images/charity/pilesos-2.png" alt="Пылесос" class="responsive-image popup">'
+    },
+    {
+        name: 'Комунальное учреждение "Одесская специализировання общеобразовательная школа-интернат №97 I-II ступеней"',
+        goal: 'Обеспечение учреждения мебелью',
+        summ: '10 408 грн.',
+        add: '<img src="/assets/images/charity/mebel-2.png" alt="Пылесос" class="responsive-image popup">'
+    },
+    {
+        name: 'Ткачук Николай',
+        goal: 'Оплата услуг реабилитации',
+        summ: '8 000 грн.',
+        add: '<img src="/assets/images/charity/tcachuk.png" alt="Оплата услуг реабилитации" class="responsive-image popup">'
+    },
+    {
+        name: 'Шевчук Максим',
+        goal: 'Оплата услуг реабилитации',
+        summ: '8 000 грн.',
+        add: '<img src="/assets/images/charity/maksim.png" alt="Оплата услуг реабилитации" class="responsive-image popup">'
     }
 ];

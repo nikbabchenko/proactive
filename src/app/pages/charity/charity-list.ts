@@ -167,5 +167,35 @@ export const charityList = [
         goal: 'Оплата услуг реабилитации',
         summ: '8 000 грн.',
         add: '<img src="/assets/images/charity/maksim.png" alt="Оплата услуг реабилитации" class="responsive-image popup">'
+    },
+    {
+        name: 'Жителям, проживающим на территории Фонтанского сельского совета',
+        goal: 'Покупка ортопедической обуви и медицинского оборудования',
+        summ: '8 000 грн.',
+        add: '<img src="/assets/images/charity/obuv.png" alt="Покупка ортопедической обуви и медицинского оборудования" class="responsive-image popup">'
+    },
+    {
+        name: 'Кучер Юрий',
+        goal: 'Оплата услуг реабилитации',
+        summ: '10 000 грн.',
+        add: '<img src="/assets/images/charity/kucher.png" alt="Оплата услуг реабилитации" class="responsive-image popup">'
+    },
+    {
+        name: 'Кудренко Д.И.',
+        goal: 'Оплата лечения',
+        summ: '14 884,7 грн.',
+        add: '<img src="/assets/images/charity/kudrenko.png" alt="Оплата лечения" class="responsive-image popup">'
+    },
+    {
+        name: 'Ищенко Сергей',
+        goal: 'Покупка медицинского оборудования',
+        summ: '6 330 грн.',
+        add: '<img src="/assets/images/charity/ischenko.png" alt="Покупка медицинского оборудования" class="responsive-image popup">'
+    },
+    {
+        name: 'Гаврилова Вероника',
+        goal: 'Оплата реабилитации',
+        summ: '10 030 грн.',
+        add: '<img src="/assets/images/charity/gavrilova.png" alt="Оплата реабилитации" class="responsive-image popup">'
     }
 ];

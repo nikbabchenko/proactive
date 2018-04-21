@@ -10,6 +10,11 @@ const outputFileName ='svg.json';
 
 try {
     fs.readdir(svgsPath, function (err, files) {
+        if (err) {
+            console.log(err);
+            return;
+        }
+
         const result = {};
         files
         .filter( function(elm) {
@@ -20,8 +25,10 @@ try {
             result[file] = fs.readFileSync(path, 'utf8');
         });
 
-        fs.writeFile(outputPath + outputFileName, JSON.stringify(result), 'utf8', function () {
-            console.log('writing...done');
+        fs.writeFile(outputPath + outputFileName, JSON.stringify(result), 'utf8', function (err) {
+            if (err) {
+                console.log(err);
+            }
         });
     });
 }

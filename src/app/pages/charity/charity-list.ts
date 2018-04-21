@@ -197,5 +197,47 @@ export const charityList = [
         goal: 'Оплата реабилитации',
         summ: '10 030 грн.',
         add: '<img src="/assets/images/charity/gavrilova.png" alt="Оплата реабилитации" class="responsive-image popup">'
+    },
+    {
+        name: 'Холин А.П.',
+        goal: 'Покупка медицинского оборудования',
+        summ: '5 500 грн.',
+        add: '<img src="/assets/images/charity/holin.jpg" alt="Оплата реабилитации" class="responsive-image popup">'
+    },
+    {
+        name: 'Калашинский Павел',
+        goal: 'Покупка беговой дорожки для реабилитации',
+        summ: '11 079 грн.',
+        add: '<img src="/assets/images/charity/kalashinsky.png" alt="Оплата реабилитации" class="responsive-image popup">'
+    },
+    {
+        name: 'Дунаевская Оксана',
+        goal: 'Покупка медикаментов',
+        summ: '63 600 грн.',
+        add: '<img src="/assets/images/charity/dunaevskaya.jpg" alt="Покупка медикаментов" class="responsive-image popup">'
+    },
+    {
+        name: 'Слепухина Варвара',
+        goal: 'Покупка медикаментов',
+        summ: '2 399 грн.',
+        add: '<img src="/assets/images/charity/slepuxina.jpg" alt="Покупка медикаментов" class="responsive-image popup">'
+    },
+    {
+        name: 'Мельничук Максим',
+        goal: 'Оплата услуг реабилитации',
+        summ: '29 040 грн.',
+        add: '<img src="/assets/images/charity/melnichuk.jpg" alt="Оплата услуг реабилитации" class="responsive-image popup">'
+    },
+    {
+        name: 'Андониев Виталий',
+        goal: 'Оплата услуг реабилитации',
+        summ: '21 626 грн.',
+        add: '<img src="/assets/images/charity/andoniev.jpg" alt="Покупка медикаментов" class="responsive-image popup">'
+    },
+    {
+        name: 'Васильченко Владислав',
+        goal: 'Оплата услуг реабилитации',
+        summ: '15 470 грн.',
+        add: '<img src="/assets/images/charity/vasilchenko.jpg" alt="Покупка медикаментов" class="responsive-image popup">'
     }
 ];

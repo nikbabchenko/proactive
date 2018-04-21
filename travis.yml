@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "0.11"
+# whitelist
+branches:
+  only:
+    - master
+env:
+  global:
+  - secure: h6i/QFDLprVJe7u/ZT...
+  - secure: CeolZiNWmqNp03j2bF...
+after_success:
+  - ./deploy.sh

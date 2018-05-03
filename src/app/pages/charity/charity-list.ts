@@ -239,5 +239,41 @@ export const charityList = [
         goal: 'Оплата услуг реабилитации',
         summ: '15 470 грн.',
         add: '<img src="/assets/images/charity/vasilchenko.jpg" alt="Покупка медикаментов" class="responsive-image popup">'
+    },
+    {
+        name: 'Хаецкая София',
+        goal: 'Покупка оборудования и курса логопедических занятий',
+        summ: '13 658 грн.',
+        add: '<img src="/assets/images/charity/haetskaya.png" alt="Хаецкая София" class="responsive-image popup">'
+    },
+    {
+        name: 'Дубровин Станислав',
+        goal: 'Оплата реабилитации',
+        summ: '9 600 грн.',
+        add: '<img src="/assets/images/charity/dubrovin.png" alt="Дубровин Станислав" class="responsive-image popup">'
+    },
+    {
+        name: 'Семенцова Н.В.',
+        goal: 'Покупка медикаментов',
+        summ: '11 674 грн.',
+        add: '<img src="/assets/images/charity/semencova.jpg" alt="Семенцова Н.В." class="responsive-image popup">'
+    },
+    {
+        name: 'Возняк Т.О.',
+        goal: 'Покупка медикаментов',
+        summ: '1 026 грн.',
+        add: '<img src="/assets/images/charity/voznjak.jpg" alt="Семенцова Н.В." class="responsive-image popup">'
+    },
+    {
+        name: 'Пастух О.Ф.',
+        goal: 'Покупка инвалидной коляски',
+        summ: '7 100 грн.',
+        add: '<img src="/assets/images/charity/pastuh.jpg" alt="Пастух О.Ф." class="responsive-image popup">'
+    },
+    {
+        name: 'Спиридонов В.Г.',
+        goal: 'Покупка инвалидной коляски',
+        summ: '6 330 грн.',
+        add: '<img src="/assets/images/charity/spiridonov.jpg" alt="Спиридонов В.Г." class="responsive-image popup">'
     }
 ];

@@ -69,7 +69,7 @@ export const charityList = [
     {
         name: 'Участник АТО <br /> Кишка В.В.',
         goal: 'Приобретение комплекса фиксаторов для накостного остеосинтеза голени и надлокотника',
-        summ: '11 400 грн.',
+        summ: '11 200 грн.',
         add: '<img src="/assets/images/kishka.jpg" alt="Приобретение комплекса фиксаторов для накостного остеосинтеза голени и надлокотника" class="responsive-image popup">'
     },
     {
@@ -171,7 +171,7 @@ export const charityList = [
     {
         name: 'Жителям, проживающим на территории Фонтанского сельского совета',
         goal: 'Покупка ортопедической обуви и медицинского оборудования',
-        summ: '8 000 грн.',
+        summ: '15 300 грн.',
         add: '<img src="/assets/images/charity/obuv.png" alt="Покупка ортопедической обуви и медицинского оборудования" class="responsive-image popup">'
     },
     {
@@ -195,7 +195,7 @@ export const charityList = [
     {
         name: 'Гаврилова Вероника',
         goal: 'Оплата реабилитации',
-        summ: '10 030 грн.',
+        summ: '10 013 грн.',
         add: '<img src="/assets/images/charity/gavrilova.png" alt="Оплата реабилитации" class="responsive-image popup">'
     },
     {
@@ -255,19 +255,19 @@ export const charityList = [
     {
         name: 'Семенцова Н.В.',
         goal: 'Покупка медикаментов',
-        summ: '11 674 грн.',
+        summ: '11 674,20 грн.',
         add: '<img src="/assets/images/charity/semencova.jpg" alt="Семенцова Н.В." class="responsive-image popup">'
     },
     {
         name: 'Возняк Т.О.',
         goal: 'Покупка медикаментов',
-        summ: '1 026 грн.',
+        summ: '1 026,40 грн.',
         add: '<img src="/assets/images/charity/voznjak.jpg" alt="Семенцова Н.В." class="responsive-image popup">'
     },
     {
         name: 'Пастух О.Ф.',
         goal: 'Покупка инвалидной коляски',
-        summ: '7 100 грн.',
+        summ: '7 100,00 грн.',
         add: '<img src="/assets/images/charity/pastuh.jpg" alt="Пастух О.Ф." class="responsive-image popup">'
     },
     {
